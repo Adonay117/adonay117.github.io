@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container{
+display: flex; 
+flex-direction: column;
+align-items: center;
+height: 100vh;
+background-image: radial-gradient( hsl(214, 47%, 23%),hsl(237, 49%, 15%)) ;
+user-select: none;
+}
+
+
+.scoreContainer{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+    width: 500px;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.content{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.scoreContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 5px;
+}
+.title{
+    color: hsl(229, 64%, 46%);
+    font-size: 13px;
+}
+.scoreGame{
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(229, 25%, 31%);
+}
+
+.contentGame{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 300px;
+    height: 250px;
+    position: relative;
+}
+.bgtriangule{
+    position: absolute;
+    top: 12px;
+
+}
+
+.options{
+   padding: 20rem;
+}
+.rock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    scale: 1.9;
+    z-index: 2;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background: linear-gradient(hsl(349, 71%, 52%),hsl(349, 70%, 56%));
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.rock:hover{
+    scale: 2.3;
+}
+.paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    scale: 1.9;
+    z-index: 2;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background: linear-gradient( hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.paper:hover{
+    scale: 2.3;
+}
+
+.scissors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    scale: 1.9;
+    right: 0;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background: linear-gradient( hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.scissors:hover{
+    scale: 2.3;
+}
+
+.circulescissors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+
+.circulerock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+}
+.circulepaper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.rock img{
+    width: 27px;
+    height: 24px;
+}
+.paper img{
+    width: 20px;
+    height: 27px;
+}
+.scissors img{
+    width: 21px;
+    height: 27px;
+}
+
+.state{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hidden{
+    display: none;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#btnPlay{
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    color:  hsl(229, 25%, 31%) ;
+}
+
+.path{
+    left: 0;
+}
+
+
+@media (max-width: 768px){
+    .scoreContainer{
+        width: 270px;
+        
+    }
+    .contentGame{
+        width: 240px;
+    }
+    .info{
+        
+        align-self: flex-end;
+    }
+    .state{
+        font-size: 30px;
+    }
+}

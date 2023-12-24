@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+ 
+ 
+</head>
+
+
+<body>
+
+  <div class="container">
+
+      <div class="scoreContainer">
+        <div class="content">
+          <p class="rockT">ROCK</p>
+          <p class="paperT">PAPER</p>
+          <p class="scissorsT">SCISSORS</p>
+        </div>
+        <div class="scoreContent">
+          <div class="title">SCORE</div>
+          <div class="scoreGame" id="score">0</div>
+        </div>
+      </div>
+
+      <div class="contentGame" id="contentGame">
+        <div class="bgtriangule" id="triangule">
+          <img src="/img/bg-triangle.svg" alt="bg-triangle">
+        </div>
+        <div class="paper path" id="paper">
+          <div class="circulepaper">
+            <img src="/img/icon-paper.svg" alt="paper">
+
+          </div>
+        
+        </div>
+        <div class="info">
+          <div id="titlewin"  class="hidden"></div>
+          <button id="btnPlay" class="hidden">PLAY AGAIN</button>
+        </div>
+      
+        
+        
+        <div class="rock" id="rock">
+          <div class="circulerock">
+            <img src="img/icon-rock.svg" alt="rock">
+
+          </div>
+        </div>
+
+        <div class="scissors" id="scissors">
+          <div class="circulescissors">
+            <img src="img/icon-scissors.svg" alt="scissors">
+          </div>
+
+        </div>
+        <div class="contentcpu hidden">
+
+        </div>
+
+       
+
+     
+        </div>
+     
+       
+
+
+
+
+
+
+   
+  
+
+ 
+  </div>
+
+  <script src="game.js"></script>
+  
+</body>
+</html>
